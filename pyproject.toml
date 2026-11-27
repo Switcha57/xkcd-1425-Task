@@ -20,4 +20,4 @@ birdcheck = "birdcheck.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-birdcheck = ["imagenet_labels.txt"]
+birdcheck = ["imagenet_labels.txt", "national_parks.geojson"]
