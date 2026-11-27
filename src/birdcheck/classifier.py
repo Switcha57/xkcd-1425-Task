@@ -9,8 +9,8 @@ from PIL import Image
 
 from .labels import BIRD_CLASS_IDS, load_labels
 
-MODEL_URL = "https://github.com/onnx/models/raw/main/validated/vision/classification/mobilenet/model/mobilenetv2-7.onnx"
-MODEL_FILENAME = "mobilenetv2-7.onnx"
+MODEL_URL = "https://huggingface.co/onnxmodelzoo/mobilenet_v2_Opset18/resolve/main/mobilenet_v2_Opset18.onnx"
+MODEL_FILENAME = "mobilenet_v2_Opset18.onnx"
 MODEL_ENV_VAR = "BIRDCHECK_MODEL"
 
 INPUT_SIZE = 224
