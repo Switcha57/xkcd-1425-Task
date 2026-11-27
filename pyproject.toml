@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "birdcheck"
+version = "0.1.0"
+description = "Check whether a photo is of a bird: the xkcd 1425 task that is now a very simple problem"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pillow>=10",
+    "onnxruntime>=1.17",
+]
+
+[project.scripts]
+birdcheck = "birdcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+birdcheck = ["imagenet_labels.txt", "national_parks.geojson"]
